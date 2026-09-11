@@ -1,0 +1,90 @@
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NoteX | Landing</title>
+    <style>
+        :root { --bg: #eef4ff; --text: #172033; --muted: #64748b; --line: #ccd5e3; --primary: #3461ff; --primary-dark: #1d46bd; --panel: #ffffff; }
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--text); background: var(--bg); }
+        .topbar { background: var(--panel); border-bottom: 1px solid var(--line); height: 76px; display: flex; align-items: center; justify-content: space-between; padding: 0 48px; }
+        .brand { color: var(--primary); font-size: 30px; font-weight: 800; text-decoration: none; }
+        .nav { display: flex; align-items: center; gap: 16px; }
+        .nav a { color: var(--muted); font-weight: 700; text-decoration: none; font-size: 14px; }
+        .nav a.login { color: var(--panel); background: var(--primary); padding: 10px 16px; border-radius: 8px; }
+        .hero { min-height: calc(100vh - 76px); display: grid; grid-template-columns: minmax(520px, 1fr) minmax(360px, 0.8fr); align-items: center; gap: 34px; max-width: 1180px; margin: 0 auto; padding: 40px 24px; }
+        .intro { padding: 24px 0; }
+        .intro .tag { display: inline-block; background: #dce7ff; color: var(--primary); border-radius: 999px; padding: 8px 14px; font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+        .intro h1 { margin: 20px 0 12px; font-size: clamp(45px, 4vw, 60px); line-height: 1.12; color: var(--text); }
+        .intro p { color: var(--muted); font-size: 18px; line-height: 1.7; max-width: 560px; margin-bottom: 26px; }
+        .actions { display: flex; align-items: center; gap: 14px; }
+        .actions a { text-decoration: none; font-weight: 800; font-size: 14px; padding: 12px 20px; border-radius: 8px; }
+        .actions .primary { background: var(--primary); color: var(--panel); }
+        .actions .secondary { border: 1px solid var(--primary); color: var(--primary); background: transparent; }
+        .features { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 18px; }
+        .feature { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; min-width: 140px; }
+        .feature strong { color: var(--primary); font-size: 22px; }
+        .feature span { color: var(--muted); font-size: 12px; display: block; margin-top: 4px; }
+        .login-panel { background: var(--panel); border-radius: 16px; padding: 28px; box-shadow: 0 24px 60px rgba(23, 32, 51, 0.14); border: 1px solid var(--line); }
+        .login-panel h2 { margin: 0 0 8px; font-size: 30px; }
+        .login-panel .mini { color: var(--muted); margin-bottom: 20px; font-size: 14px; }
+        .form-label { display: block; font-weight: 700; font-size: 13px; margin-bottom: 8px; }
+        .login-panel input { width: 100%; padding: 13px 14px; border-radius: 10px; border: 1px solid var(--line); margin-bottom: 16px; font-size: 14px; }
+        .login-panel .row { display: flex; align-items: center; justify-content: space-between; gap: 16px; font-size: 12px; color: var(--muted); }
+        .login-panel button { background: var(--primary); color: var(--panel); border: none; padding: 12px 18px; width: 100%; border-radius: 10px; font-size: 14px; font-weight: 800; cursor: pointer; margin-top: 16px; }
+        .login-panel button:hover { background: var(--primary-dark); }
+        @@media (max-width: 900px) { .hero { grid-template-columns: 1fr; } .topbar { padding: 0 24px; } }
+    </style>
+</head>
+<body>
+    <header class="topbar">
+        <a href="/" class="brand">NoteX</a>
+        <nav class="nav">
+            <a href="#">Overview</a>
+            <a href="#">Features</a>
+            <a href="#">Security</a>
+            <a href="/Account/Login" class="login">Login</a>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <section class="intro">
+            <span class="tag">NoteX Workspace</span>
+            <h1>Bring your ideas into one secure place.</h1>
+            <p>NoteX helps your team capture ideas, organize notes, and keep every project moving with a safer workspace.</p>
+            <div class="actions">
+                <a class="primary" href="/Account/Login">Get Started</a>
+                <a class="secondary" href="#">See Platform</a>
+            </div>
+            <div class="features">
+                <div class="feature"><strong>01</strong><span>Capture notes</span></div>
+                <div class="feature"><strong>24/7</strong><span>Protected access</span></div>
+                <div class="feature"><strong>AI</strong><span>Smart workflow</span></div>
+            </div>
+        </section>
+
+        <aside class="login-panel">
+            <h2>Login</h2>
+            <div class="mini">Continue to your workspace</div>
+            <form asp-controller="Account" asp-action="Login" method="post">
+                <label class="form-label" for="Email">Email</label>
+                <input id="Email" name="Email" type="email" placeholder="admin@notex.local" required />
+
+                <label class="form-label" for="Password">Password</label>
+                <input id="Password" name="Password" type="password" placeholder="Password123!" required />
+
+                <div class="row">
+                    <label><input type="checkbox" name="RememberMe" /> Remember me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+
+                <button type="submit">Enter Workspace</button>
+            </form>
+        </aside>
+    </main>
+</body>
+</html>
