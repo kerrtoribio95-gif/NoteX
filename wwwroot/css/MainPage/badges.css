@@ -1,0 +1,72 @@
+/* ==========================================================================
+    DECK PILL BADGES (LIGHT & DARK DUAL-THEME)
+    ========================================================================== */
+
+/* Light Mode: Fresh, high-contrast pastel pills */
+body:not(.dark) .bg-blue-50 {
+    background-color: #EFF6FF !important;
+    color: #1D4ED8 !important;
+    border: 1px solid #BFDBFE !important;
+}
+
+body:not(.dark) .bg-purple-50 {
+    background-color: #FAF5FF !important;
+    color: #7E22CE !important;
+    border: 1px solid #E9D5FF !important;
+}
+
+body:not(.dark) .bg-emerald-50 {
+    background-color: #ECFDF5 !important;
+    color: #047857 !important;
+    border: 1px solid #A7F3D0 !important;
+}
+
+/* Dark Mode: Deep luminous glass pills */
+body.dark .bg-blue-50 {
+    background-color: rgba(59, 130, 246, 0.18) !important;
+    color: #93C5FD !important;
+    border: 1px solid rgba(59, 130, 246, 0.3) !important;
+}
+
+body.dark .bg-purple-50 {
+    background-color: rgba(168, 85, 247, 0.18) !important;
+    color: #D8B4FE !important;
+    border: 1px solid rgba(168, 85, 247, 0.3) !important;
+}
+
+body.dark .bg-emerald-50 {
+    background-color: rgba(16, 185, 129, 0.18) !important;
+    color: #6EE7B7 !important;
+    border: 1px solid rgba(16, 185, 129, 0.3) !important;
+}
+
+/* Light Mode Contrast Fallback */
+body:not(.dark) {
+    color: #0F172A !important;
+}
+
+body:not(.dark) .glass-card,
+body:not(.dark) .onyx-panel {
+    color: #1E293B !important;
+}
+
+body:not(.dark) .text-neutral-800,
+body:not(.dark) .text-neutral-700,
+body:not(.dark) .text-neutral-900 {
+    color: #0F172A !important;
+}
+
+body:not(.dark) .text-neutral-500,
+body:not(.dark) .text-neutral-400 {
+    color: #475569 !important;
+}
+
+body:not(.dark) #breadcrumb-subject,
+body:not(.dark) #subject-nav-list span.sidebar-text {
+    color: #0F172A !important;
+}
+
+body:not(.dark) td {
+    color: #0F172A !important;
+}
+

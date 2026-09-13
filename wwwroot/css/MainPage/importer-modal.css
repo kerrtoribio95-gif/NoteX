@@ -1,0 +1,99 @@
+/* ==========================================================================
+    SMART IMPORTER MODAL DARK MODE FIXES
+    ========================================================================== */
+/* 1. Modal container & sub-panels */
+body.dark .modal-panel {
+    background-color: rgba(15, 23, 42, 0.95) !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+    color: #F8FAFC !important;
+}
+
+/* 2. Target Deck dropdown */
+body.dark #import-target-deck,
+body.dark .modal-panel select {
+    background-color: #1E293B !important;
+    color: #F8FAFC !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* 3. Textarea and input fields */
+body.dark #import-textarea,
+body.dark #manual-prompt,
+body.dark #manual-answer,
+body.dark .modal-panel input[type="text"],
+body.dark .modal-panel textarea {
+    background-color: #0F172A !important;
+    color: #F8FAFC !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+body.dark #import-textarea::placeholder,
+body.dark .modal-panel textarea::placeholder,
+body.dark .modal-panel input::placeholder {
+    color: #64748B !important;
+}
+
+/* 4. Detection Preview container & cards */
+body.dark #import-preview-box {
+    background-color: #0F172A !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+body.dark #import-preview-box>div {
+    background-color: #1E293B !important;
+    border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+/* 5. Inactive tab & Cancel button */
+body.dark #tab-btn-manual.bg-white\/60,
+body.dark #tab-btn-paste.bg-white\/60,
+body.dark .modal-panel button.bg-white\/70 {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    color: #CBD5E1 !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+
+body.dark .modal-panel button.bg-white\/70:hover {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    color: #FFFFFF !important;
+}
+
+/* 6. Top count badges (0 Lists, 0 T/F) */
+body.dark [class*="bg-purple-100"] {
+    background-color: rgba(168, 85, 247, 0.2) !important;
+    color: #D8B4FE !important;
+    border: 1px solid rgba(168, 85, 247, 0.3) !important;
+}
+
+body.dark [class*="bg-emerald-100"] {
+    background-color: rgba(16, 185, 129, 0.2) !important;
+    color: #6EE7B7 !important;
+    border: 1px solid rgba(16, 185, 129, 0.3) !important;
+}
+
+/* Ensure high-contrast readability in Light Mode for Smart Importer */
+body:not(.dark) #modal-importer .modal-panel {
+    background-color: #FFFFFF !important;
+    color: #0F172A !important;
+}
+
+body:not(.dark) #import-target-deck,
+body:not(.dark) #import-textarea,
+body:not(.dark) #manual-prompt,
+body:not(.dark) #manual-answer,
+body:not(.dark) #import-preview-box input,
+body:not(.dark) #import-preview-box select {
+    background-color: #F8FAFC !important;
+    color: #0F172A !important;
+    border-color: #CBD5E1 !important;
+}
+
+body:not(.dark) #import-preview-box>div {
+    background-color: #FFFFFF !important;
+    border-color: #E2E8F0 !important;
+}
+
+body:not(.dark) #import-preview-box label {
+    color: #64748B !important;
+}
+

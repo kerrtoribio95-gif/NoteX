@@ -1,0 +1,13 @@
+:root {
+    --canvas-bg: #F4F8FC;
+    --glass-surface: rgba(255, 255, 255, 0.75);
+    --glass-surface-elevated: rgba(255, 255, 255, 0.88);
+    --glass-border: rgba(184, 218, 255, 0.5);
+    --glass-inner-bevel: inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.95);
+    --glass-shadow: 0 20px 45px rgba(50, 60, 75, 0.08), 0 4px 12px rgba(50, 60, 75, 0.03);
+    --color-500: #0D82FF;
+    --color-100: #E1EFFF;
+    --text-main: #1D232C;
+    --text-sub: #536071;
+}
+

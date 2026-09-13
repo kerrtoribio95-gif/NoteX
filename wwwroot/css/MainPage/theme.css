@@ -1,0 +1,120 @@
+/* ==========================================================================
+    DARK MODE CONTRAST & BADGE CORRECTIONS
+    ========================================================================== */
+body.dark {
+    color: #F1F5F9;
+}
+
+/* 1. Fix white/faded badge pills (Breadcrumb, Period tags, Cram buttons) */
+body.dark #breadcrumb-period,
+body.dark .bg-\[\#E1EFFF\],
+body.dark [class*="bg-blue-100"] {
+    background-color: rgba(13, 130, 255, 0.2) !important;
+    color: #60A5FA !important;
+    border-color: rgba(96, 165, 250, 0.3) !important;
+}
+
+/* 2. Fix white-washed header action buttons & New Subject button */
+body.dark header button.bg-white\/80,
+body.dark aside button.bg-white\/70,
+body.dark .btn-action-pill.bg-white\/70,
+body.dark .btn-skew.bg-white\/80 {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    color: #F1F5F9 !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+body.dark header button.bg-white\/80:hover,
+body.dark aside button.bg-white\/70:hover {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* 3. Fix deck category tags (Terms, Lists, T/F) */
+body.dark .bg-blue-50 {
+    background-color: rgba(59, 130, 246, 0.18) !important;
+    color: #93C5FD !important;
+    border-color: rgba(59, 130, 246, 0.3) !important;
+}
+
+body.dark .bg-purple-50 {
+    background-color: rgba(168, 85, 247, 0.18) !important;
+    color: #D8B4FE !important;
+    border-color: rgba(168, 85, 247, 0.3) !important;
+}
+
+body.dark .bg-emerald-50 {
+    background-color: rgba(16, 185, 129, 0.18) !important;
+    color: #6EE7B7 !important;
+    border-color: rgba(16, 185, 129, 0.3) !important;
+}
+
+/* 4. Fix search input contrast & placeholder */
+body.dark #global-search-input {
+    background-color: rgba(15, 23, 42, 0.8) !important;
+    color: #FFFFFF !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+body.dark #global-search-input::placeholder {
+    color: #64748B !important;
+}
+
+/* 5. Fix sidebar inactive links, subject names, and period buttons */
+body.dark #period-button-group button:not(.bg-\[\#0D82FF\]) {
+    color: #94A3B8 !important;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+body.dark #period-button-group button:not(.bg-\[\#0D82FF\]):hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    color: #FFFFFF !important;
+}
+
+body.dark #subject-nav-list .text-neutral-700,
+body.dark #subject-nav-list .text-neutral-600 {
+    color: #CBD5E1 !important;
+}
+
+/* 6. Fix deck card action icon buttons (list, edit, print, delete) */
+body.dark .glass-card button .lucide,
+body.dark .glass-card .text-neutral-600,
+body.dark .glass-card .text-neutral-400 {
+    color: #94A3B8;
+}
+
+body.dark .glass-card button:hover .lucide {
+    color: #FFFFFF;
+}
+
+body.dark {
+    --canvas-bg: #070a12;
+    --glass-surface: rgba(15, 23, 42, 0.72);
+    --glass-surface-elevated: rgba(20, 30, 50, 0.75);
+    --glass-border: rgba(255, 255, 255, 0.12);
+    --glass-inner-bevel: inset 0 1px 1px 0 rgba(255, 255, 255, 0.15);
+    --glass-shadow: 0 20px 45px rgba(0, 0, 0, 0.55);
+    --color-500: #389BFF;
+    --color-100: #1B2B44;
+    --text-main: #F8FAFC;
+    --text-sub: #94A3B8;
+}
+
+/* Force text elements to inherit the high-contrast light colors in dark mode */
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark .font-black,
+body.dark .font-bold {
+    color: #F8FAFC;
+}
+
+body.dark p,
+body.dark span:not([class*="bg-"]):not([class*="text-"]) {
+    color: #94A3B8;
+}
+
+body.dark td {
+    color: #F1F5F9;
+}
+

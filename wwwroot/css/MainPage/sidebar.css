@@ -1,0 +1,30 @@
+/* Brighten inactive academic period pills */
+body.dark #period-button-group button:not(.bg-\[\#0D82FF\]) {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    color: #E2E8F0 !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Brighten subject names and icons */
+body.dark #subject-nav-list span.sidebar-text {
+    color: #F1F5F9 !important;
+    font-weight: 600 !important;
+}
+
+body.dark #subject-nav-list button i {
+    color: #94A3B8 !important;
+}
+
+body.dark #subject-nav-list button:hover i {
+    color: #FFFFFF !important;
+}
+
+/* New Subject & bottom utility buttons */
+body.dark #app-sidebar .btn-action-pill,
+body.dark #app-sidebar .theme-switch~button,
+body.dark #app-sidebar label[title*="Restore"] {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    color: #F8FAFC !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+

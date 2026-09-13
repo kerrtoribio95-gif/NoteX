@@ -1,0 +1,63 @@
+/* ==========================================================================
+    DECK PICKER MODAL CONTRAST FIXES
+    ========================================================================== */
+/* Light Mode styling */
+body:not(.dark) #modal-deck-picker .modal-panel {
+    background-color: #FFFFFF !important;
+    color: #0F172A !important;
+}
+
+body:not(.dark) #deck-picker-list button {
+    background-color: #F8FAFC !important;
+    border-color: #E2E8F0 !important;
+}
+
+body:not(.dark) #deck-picker-list button:hover {
+    background-color: #EFF6FF !important;
+    border-color: #BFDBFE !important;
+    transform: translateY(-1px);
+}
+
+body:not(.dark) #deck-picker-list h4 {
+    color: #0F172A !important;
+}
+
+body:not(.dark) #deck-picker-list .deck-picker-subname {
+    color: #64748B !important;
+}
+
+body:not(.dark) #deck-picker-list .deck-picker-count {
+    color: #0D82FF !important;
+    background-color: #EFF6FF !important;
+    border: 1px solid #DBEAFE !important;
+}
+
+/* Dark Mode styling */
+body.dark #modal-deck-picker .modal-panel {
+    background-color: rgba(15, 23, 42, 0.95) !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+body.dark #deck-picker-list button {
+    background-color: rgba(30, 41, 59, 0.7) !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+body.dark #deck-picker-list button:hover {
+    background-color: rgba(51, 65, 85, 0.8) !important;
+    border-color: rgba(13, 130, 255, 0.4) !important;
+}
+
+body.dark #deck-picker-list h4 {
+    color: #F8FAFC !important;
+}
+
+body.dark #deck-picker-list .deck-picker-subname {
+    color: #94A3B8 !important;
+}
+
+body.dark #deck-picker-list .deck-picker-count {
+    color: #93C5FD !important;
+    background-color: rgba(13, 130, 255, 0.15) !important;
+    border: 1px solid rgba(13, 130, 255, 0.25) !important;
+}
