@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NoteX")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f3618fdb3b0d1dfa803ef3d7b6f4aebdef5f4729")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+903ba726d87465494c402214e2bed460b2172ce7")]
 [assembly: System.Reflection.AssemblyProductAttribute("NoteX")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NoteX")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
