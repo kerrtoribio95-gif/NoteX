@@ -1,0 +1,7 @@
+bin/
+obj/
+wwwroot/css/
+wwwroot/js/
+.DS_Store
+*.user
+*.suo
